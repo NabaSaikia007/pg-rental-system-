@@ -1,0 +1,31 @@
+<?php
+		if(isset($_post['signup']));
+		{
+			extract($_POST);
+			if(strlen($fanme)<3)
+			{
+				$error[]= ' plese enter vaild name';
+			}
+			{
+			extract($_POST);
+			if(strlen($lanme)<20){ //max
+
+				$error[]= ' plese enter vaild name';
+			}
+			if(!prag_match("/^[A-Za-z_]*[A-Za-z ]+[A-Za-z ]*$/",$fname)){
+				$error[] = ' not valid (! @ # $ % ^ & 1 2 3 )';
+			
+			}
+		}
+	?>
+
+
+extract($_POST);
+			if(strlen($lname)<20){ //max
+
+				$error[]= ' plese enter vaild name';
+			}
+			if(!prag_match("/^[A-Za-z_]*[A-Za-z ]+[A-Za-z ]*$/",$fname)){
+				$error[] = ' not valid (! @ # $ % ^ & 1 2 3 )';
+			
+			}
